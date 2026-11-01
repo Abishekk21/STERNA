@@ -9,7 +9,9 @@
 
 A modern, responsive web application for comprehensive security device and access management.
 
-[Features](#features) • [Installation](#installation) • [Usage](#usage) • [Tech Stack](#tech-stack) • [Screenshots](#screenshots)
+### 🌐 [Live Demo](https://sterna-security.netlify.app/login) | [Documentation](#installation) | [Features](#features)
+
+**Demo Access**: This is a frontend demonstration. Login with any valid email format and password (minimum 8 characters).
 
 </div>
 
@@ -137,6 +139,16 @@ A modern, responsive web application for comprehensive security device and acces
 
 ## 📦 Installation
 
+### 🌐 Try Live Demo First
+
+**No installation needed!** Try the live demo at [https://sterna-security.netlify.app/login](https://sterna-security.netlify.app/login)
+
+Login with any valid email and password (8+ characters) to explore all features.
+
+---
+
+### 💻 Local Development Setup
+
 ### Prerequisites
 
 - **Node.js** (v16 or higher)
@@ -180,12 +192,23 @@ npm run preview
 
 ## 🚀 Usage
 
-### Login Credentials
+### 🌐 Live Demo
 
-This is a **frontend-only demo** with client-side validation. Use any valid credentials:
+**Access the application**: [https://sterna-security.netlify.app/login](https://sterna-security.netlify.app/login)
 
-- **Email**: Any valid email format (e.g., `admin@sterna.com`)
-- **Password**: Minimum 8 characters (e.g., `password123`)
+### Demo Credentials
+
+This is a **frontend demonstration** with client-side validation only. No backend authentication is required.
+
+**Email**: Any valid email format
+- Examples: `admin@sterna.com`, `user@example.com`, `demo@test.com`
+- Must contain `@` and domain (e.g., `.com`, `.org`)
+
+**Password**: Minimum 8 characters
+- Examples: `password123`, `demo12345`, `test1234`
+- Any combination of letters and numbers
+
+> 💡 **Note**: Since this is a frontend-only demo, credentials are validated for format only. Any valid email and 8+ character password will grant access to the system.
 
 ### Navigation
 
@@ -381,6 +404,44 @@ npm install
 - CSS with custom properties (variables)
 - Component-specific CSS files
 - Responsive design principles
+
+---
+
+## 🚀 Deployment
+
+### Live Application
+
+The application is deployed and accessible at:
+
+**🌐 [https://sterna-security.netlify.app/login](https://sterna-security.netlify.app/login)**
+
+### Deployment Platform
+
+- **Platform**: Netlify
+- **Status**: Live
+- **Auto-Deploy**: Enabled from `main` branch
+- **SSL**: Enabled (HTTPS)
+
+### Deployment Steps (for reference)
+
+1. Build the production version:
+   ```bash
+   npm run build
+   ```
+
+2. Deploy the `dist` folder to Netlify
+
+3. Configure build settings:
+   - **Build Command**: `npm run build`
+   - **Publish Directory**: `dist`
+   - **Node Version**: 16 or higher
+
+### Environment
+
+- **Type**: Static Site (SPA)
+- **Runtime**: Client-side only
+- **Authentication**: Frontend validation only
+- **Data**: Demo data (no backend)
 
 ---
 
