@@ -1,0 +1,145 @@
+.location-sidebar {
+  position: fixed;
+  left: var(--sidebar-width);
+  top: 0;
+  width: var(--location-panel-width);
+  height: 100vh;
+  background-color: var(--white);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+}
+
+.location-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.location-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.add-location-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--primary-cyan);
+  color: var(--white);
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.add-location-btn:hover {
+  background-color: #1a9fd0;
+}
+
+.location-search {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.location-search input {
+  font-size: 13px;
+}
+
+.location-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.location-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.location-item:hover {
+  background-color: #F8FCFD;
+}
+
+.location-item.active {
+  background-color: var(--light-cyan);
+}
+
+.location-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-cyan);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.location-info {
+  flex: 1;
+}
+
+.location-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-cyan);
+  margin-bottom: 2px;
+}
+
+.location-city {
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+
+.location-indicator {
+  width: 3px;
+  height: 40px;
+  background-color: var(--primary-cyan);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 2px 0 0 2px;
+  opacity: 0;
+}
+
+.location-item.active .location-indicator {
+  opacity: 1;
+}
+
+.location-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--secondary-text);
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .location-sidebar {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+}

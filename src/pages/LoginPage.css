@@ -1,0 +1,168 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 32px;
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.login-brand-sterna {
+  background-color: var(--primary-cyan);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 2px;
+}
+
+.login-brand-selyek {
+  color: var(--primary-cyan);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.login-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.login-subtitle {
+  font-size: 13px;
+  color: var(--secondary-text);
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.required {
+  color: #E74691;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--secondary-text);
+  transition: color 0.2s;
+}
+
+.password-toggle:hover {
+  color: var(--primary-text);
+}
+
+.input-error {
+  border-color: #E74691 !important;
+}
+
+.error-message {
+  font-size: 12px;
+  color: #E74691;
+  margin-top: -2px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: -8px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--primary-cyan);
+  font-size: 12px;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.divider {
+  text-align: center;
+  position: relative;
+  margin: 8px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 30px);
+  height: 1px;
+  background-color: var(--border);
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  color: var(--secondary-text);
+  font-size: 12px;
+  padding: 0 10px;
+  background-color: var(--white);
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 24px;
+  }
+}
