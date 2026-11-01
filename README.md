@@ -9,7 +9,7 @@
 
 A modern, responsive web application for comprehensive security device and access management.
 
-### 🌐 [Live Demo](https://sterna-security.netlify.app/login) | [Documentation](#installation) | [Features](#features)
+### 🌐 [Live Demo](https://sterna-security.netlify.app/) | [Documentation](#installation) | [Features](#features)
 
 **Demo Access**: This is a frontend demonstration. Login with any valid email format and password (minimum 8 characters).
 
